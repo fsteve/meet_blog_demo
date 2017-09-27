@@ -1,15 +1,24 @@
 .navbar {
 	border-radius: 0;
 	margin-bottom: 20px;
+	background-color: $primary-color;
 	.navbar-brand {
 		font-weight: bolder;
+		color: $primary-color-text;
 		.light {
 			font-weight: 300;
+			color: $primary-color-text;
 		}
 	}
 	.navbar-toggler {
 		outline: none;
-	}	
+	}
+	.nav-item {
+			color: $primary-color-light !important;
+			&.active {
+				color: $primary-color-text !important;
+			}
+	}
 }
 
 .collapse-bg {
@@ -34,6 +43,6 @@
 		&:active {
 			color: white;
 			border-bottom: none;
-		} 
+		}
 	}
 }
